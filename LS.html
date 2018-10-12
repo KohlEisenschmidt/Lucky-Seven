@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="utf-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+    <title>Lucky Sevens</title>
+
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" -->
+    <!-- crossorigin="anonymous"> -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/JavaScript" src="LS.js"></script>
+    <!-- <link href="LS.css" rel="stylesheet" type="text/css" /> -->
+
+</head>
+
+<body>
+
+    <div class="container">
+        <br><br>
+        <!-- The header element contains only the main title at this point. -->
+        <h1>Lucky Sevens</h1>
+        <br><br>
+        <form name="betForm" onsubmit="return play();">
+
+            <!-- class="form-inline"> -->
+
+            <div class="form-group">
+                <label for="Bet">Starting Bet: </label>
+                <input type="text" id="Bet" name="Bet" class="form-control" placeholder="$0.00">
+            </div>
+
+            <!-- <button type="submit" id="submitButton" value="Play" name="Play" value="Send Request" class="btn btn-default">Submit</button> -->
+            <!-- <input type="submit" name="submit" value="Play"> -->
+            <button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+            <button type="reset" id="resetButton" class="btn">Reset</button>
+
+            <br>
+
+        </form>
+
+
+
+        <table id="results" class="table table-striped" style="display: none;">
+            <!-- for when you set it up for not showing before game  style="display:none;"> -->
+            <!-- style="display:none;"> -->
+            <tbody>
+                <tr>
+                    <td>Starting Bet</td>
+                    <td><span id="start"></span></td>
+                </tr>
+                <tr>
+                    <td>Total Rolls Before Going Broke</td>
+                    <td><span id="totalRolls"></span></td>
+                </tr>
+                <tr>
+                    <td>Highest Amount Won</td>
+                    <td><span id="mostWon"></span></td>
+                </tr>
+                <tr>
+                    <td>Roll Count At Highest Amount Won</td>
+                    <td><span id="totalRollsToBest"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
+</body>
+
+</html>
