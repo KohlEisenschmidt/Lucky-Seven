@@ -1,4 +1,23 @@
-# Lucky-Seven
+# Kohl's Lucky-Seven
+
+This game called Lucky Seven is a game where you place a bet and attempt to roll a Seven. 
+
+You roll the dice by clicking Play. 
+
+I you successfully rolled a seven then you win $4, if not then you loose $1. 
+
+Once you click Play the program will roll the dice for you repeatedly until all the money is gone. 
+
+When all your money is gone you will be able to see the statistics of you gambling session. 
+
+Click the link below to play! 
+
+https://kohleisenschmidt.github.io/Lucky-Seven/
+
+
+
+
+<!-- pseudo code 
 
 put in a starting bet
 
@@ -23,10 +42,7 @@ var to track total turns till broke
 var to track highest amount won intitialized at start pot 
     checks to highest pot amount if <= pot amount update to currnt pot amount. 
 
-var turns tracked till highest amount won, initialized at 1. each turn adds 
+var turns tracked till highest amount won, initialized at 1. each turn adds  -->
 
 
  
-
-<!-- Validation2  the current pot is >0 -->
-
